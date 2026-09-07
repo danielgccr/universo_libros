@@ -453,6 +453,12 @@ La comparación tiene límites, y son éstos: esos cursos se dirigen a estudiant
 <programming-historian>
 Queda la objeción más previsible, y se responde mejor con un ejemplo que con un argumento: «el control de versiones es cosa de programadores, un departamento de Lengua nunca va a usar eso».
 
+#figure(image("pics/screenshot-2026-09-07_14-39-23.png", alt: "Programming Historian"),
+  caption: [
+    Lecciones de Programming Historian
+  ]
+)
+
 #link("https://programminghistorian.org/")[The Programming Historian] @programming_historian lleva dieciocho años demostrando lo contrario. Es una revista de acceso abierto y revisión por pares dedicada a las humanidades digitales, sostenida por una entidad sin ánimo de lucro y un consejo editorial de unas cuarenta personas, con alrededor de doscientas cincuenta lecciones en cuatro idiomas y, según sus propias cifras, unos dos millones de lectores al año. Su #strong[edición en castellano existe desde 2017], con equipo editorial propio —lingüistas, historiadores, filósofos y bibliotecarios de universidades españolas y latinoamericanas— y unas setenta lecciones, en su mayoría traducciones y una veintena de originales.
 
 Por dentro es casi exactamente el modelo que aquí se propone. Las lecciones son ficheros Markdown en un repositorio público, y la revisión por pares no ocurre por correo ni en una plataforma cerrada: cada propuesta abre un ticket público donde los revisores comentan a la vista de todos, el autor responde y el editor aprueba, con un flujo documentado de ocho fases y un mínimo de dos revisores. Y quienes lo sostienen no son ingenieros de software, sino historiadores, filólogos, archiveros y bibliotecarios.
@@ -540,6 +546,13 @@ Con ese criterio, para Windows existen estas opciones:
   Para ver qué se ha modificado sin abrir terminales ni editores técnicos, existen dos soluciones de escritorio idóneas:
 
   - #strong[GitHub Desktop:]~Privativo (es de Microsoft), pero gratuito, sin necesidad de permisos de administrador y compatible con cualquier servidor Gitea o Forgejo por HTTPS. Al abrirlo muestra la lista de archivos modificados; al pinchar en un tema, la pantalla se divide en dos y resalta en~#strong[rojo]~las frases borradas y en~#strong[verde]~los párrafos añadidos. Abajo a la izquierda se rellena el recuadro «¿Qué has cambiado?» y se pulsa~#emph[Confirmar y sincronizar]. Sirve para sincronizar, no para todo: las propuestas de cambio entre compañeros se hacen desde la interfaz web de Gitea, que es también donde se revisan y se aprueban.
+
+  #figure(image("pics/desktop-hero-bottom.webp", alt: "Github Desktop"),
+  caption: [
+    Github Desktop
+  ]
+)
+
   - #strong[#link("https://tortoisegit.org")[TortoiseGit]:]~Se integra directamente en el Explorador de Archivos de Windows. Las carpetas de las asignaturas muestran iconos sobre el icono del archivo: un tic verde si el tema está al día y un círculo rojo si se ha modificado. Basta con hacer clic derecho sobre la carpeta, pulsar~#emph[Comparar cambios]~para revisar las diferencias línea a línea, redactar el mensaje de confirmación y enviar. Un detalle que hay que consultar antes con el coordinador TIC: al integrarse en el Explorador, TortoiseGit exige permisos de administrador para instalarse, cosa que no siempre está al alcance del docente en un equipo gestionado por la consejería.
 
 - #strong[Para la gestión bibliográfica y exportación:]
