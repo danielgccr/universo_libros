@@ -150,6 +150,7 @@
       email: "" ),
     ),
   lang: "es",
+  date: [7 de septiembre de 2026 — #strong[v0.1]],
   abstract-title: [Resumen],
   abstract: [Los programas de préstamo han resuelto quién paga los libros de texto, pero no que el libro siga siendo un objeto escaso, ajeno y caduco. Este documento propone redactar el material docente en texto plano y gestionarlo con control de versiones: el profesorado escribe en Markdown y el servidor del centro genera la web, el cuadernillo listo para reprografía y las versiones adaptadas. No hace falta una norma nueva —el reglamento del Programa Accede ya permite sustituir los libros comerciales por materiales de elaboración propia y los financia en igualdad de condiciones—, sino herramientas que no vuelvan la tarea inabordable. Se detallan el coste comparado, los precedentes que respaldan el modelo, los que fracasaron y un pilotaje acotado para empezar.],
   margin: (x: 2.5cm,y: 2.5cm,),
@@ -170,6 +171,16 @@
   title: auto,
   depth: 2
 );
+
+#pagebreak()
+
+#heading(numbering: none)[Licencia y créditos]
+<licencia-creditos>
+Este documento —borrador v0.1, de 7 de septiembre de 2026— se distribuye bajo licencia #link("https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es")[#strong[Creative Commons Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional] (CC BY-NC-SA 4.0)], la misma que propone para los materiales docentes de los que trata. Puede copiarse, imprimirse, citarse, traducirse y adaptarse sin pedir permiso, siempre que se reconozca la autoría, no se haga un uso comercial y las versiones derivadas se publiquen con esta misma licencia.
+
+Esa licencia cubre el texto. #strong[Salvo indicación en contrario], las imágenes son obra de terceros y conservan la licencia que se indica en su propio pie, con autor y procedencia: es lo que exige el capítulo «Qué puede publicarse en abierto y qué no», y sería incoherente reclamarlo a los demás y no cumplirlo aquí. Ninguna de ellas se reproduce modificada.
+
+Al tratarse de un borrador, las cifras y las referencias legales están contrastadas con fuentes primarias —boletines oficiales, informes originales y las webs de los proyectos citados— pero cualquier error que quede es responsabilidad del autor, y agradecerá que se le señale.
 
 #pagebreak()
 
@@ -195,9 +206,10 @@ Así es el universo de los libros de texto en Secundaria, ¿pero y si hubiese ot
 
 La primera pieza aquí a descubrir es el #strong[texto plano]. Escribir no debería ser pelear contra márgenes que se descuadran, menús interminables o formatos cerrados que exigen pagar licencias anuales sólo para abrir un documento en condiciones. El texto plano es la esencia misma de la escritura digital: caracteres puros y legibles por cualquier ordenador del planeta, hoy o dentro de cincuenta años.
 
-#figure(image("./pics/Pasted image 20260906213536.png", alt: "Ejemplo de un editor de texto plano"),
+#figure(image("./pics/notepad-plus-plus-commons.png", alt: "El editor de texto plano Notepad++ en Windows 11"),
   caption: [
-    Ejemplo de un editor de texto plano
+    Un editor de texto plano: Notepad++ en Windows 11 \
+    #text(size: 0.8em)[Programa: Don Ho y colaboradores. Captura: WubTheCaptain, #link("https://commons.wikimedia.org/wiki/File:Notepad%2B%2B_v8.9.1_(64-bit)_on_Windows_11,_with_an_empty_new_file_and_the_About_Notepad%2B%2B_window.png")[Wikimedia Commons], licencia #link("https://www.gnu.org/licenses/gpl-3.0.html")[GPLv3].]
   ]
 )
 
@@ -205,9 +217,10 @@ Adoptar este enfoque descarga al docente de una tarea que no le corresponde. Al 
 
 La segunda es el #strong[control de versiones], estándar en el desarrollo de software, ya que permite trazar cambios y tener un historial de un determinado proyecto. Para los docentes, tiene aplicaciones prácticas que, para empezar, evitan engrudos del estilo `Tema4_v2_DEFINITIVO_corregido.docx` y permiten registrar la evolución de los apuntes, más si en cada #emph[commit] se usan descripciones claras, como «Añadido el tema 4 a las notas de Lengua en 4º de la ESO: análisis sintáctico».
 
-#figure(image("./pics/Forgejo_screenshot_dark_mode.png", alt: "Ejemplo de control de versiones"),
+#figure(image("./pics/Forgejo_screenshot_dark_mode.png", alt: "Un repositorio alojado en Forgejo"),
   caption: [
-    Ejemplo de control de versiones
+    Ejemplo de control de versiones: un repositorio en Forgejo \
+    #text(size: 0.8em)[Programa: desarrolladores de Forgejo. Captura: SkipperGeek, #link("https://commons.wikimedia.org/wiki/File:Forgejo_screenshot_dark_mode.png")[Wikimedia Commons], licencia #link("https://www.gnu.org/licenses/gpl-3.0.html")[GPLv3].]
   ]
 )
 
@@ -236,9 +249,10 @@ La división no es teórica: este documento se redactó primero en Markdown y ac
 
 - Por último, el #strong[rigor bibliográfico] se completa diciéndole adiós a los enlaces rotos pegados a mano a pie de página. Mediante herramientas estándar y abiertas como #strong[Zotero] (con su conector para el navegador web, #link("https://www.zotero.org/download/")[Zotero Connector]) o #strong[JabRef], capturar una fuente de internet, un artículo o una ley en el BOE cuesta un solo clic. La extensión #emph[Better BibTeX] mantiene sincronizado automáticamente un archivo `referencias.bib` en segundo plano. Los docentes solo tienen que invocar la cita en su texto plano con una clave sencilla como `[@garcia2024]` y el sistema maquetará la bibliografía con precisión académica al generar el documento.
 
-#figure(image("./pics/sidebar-view-marktext.png", alt: "Un editor en Markdown"),
+#figure(image("./pics/sidebar-view-marktext.png", alt: "El editor de Markdown MarkText"),
   caption: [
-    Un editor en Markdown
+    Un editor en Markdown: MarkText \
+    #text(size: 0.8em)[Captura del proyecto #link("https://www.marktext.me")[MarkText], licencia #link("https://github.com/marktext/marktext/blob/develop/LICENSE")[MIT].]
   ]
 )
 
@@ -341,9 +355,10 @@ La ventaja del texto plano es que actúa como una~#strong[fuente única de la ve
 
 La diferencia frente al manual de trescientas páginas del banco de libros es sustancial: el cuadernillo impreso a demanda es un material vivo y fungible. El alumno lo puede subrayar, anotar en los márgenes, completar sus ejercicios y conservarlo como su propio cuaderno de aprendizaje.
 
-#figure(image("pics/screenshot-2026-09-07_14-44-42.png", alt: "Apuntes Marea Verde"),
+#figure(image("pics/screenshot-2026-09-07_14-44-42.png", alt: "La web de Apuntes Marea Verde"),
   caption: [
-    Un caso de web en el ámbito nacional: Apuntes Marea Verde
+    Un caso de web en el ámbito nacional: Apuntes Marea Verde \
+    #text(size: 0.8em)[Captura de #link("https://www.apuntesmareaverde.org.es/")[apuntesmareaverde.org.es], obra colectiva del profesorado de Marea Verde, licencia #link("https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es")[CC BY-NC-SA].]
   ]
 )
 
@@ -427,9 +442,10 @@ Antes de proponer nada, miremos lo que otros ya han hecho, incluidos sus fracaso
 <mc-libre>
 El portal #strong[mclibre.org] @mclibre, del profesor Bartolomé Sintes Marco, lleva más de veinte años sirviendo materiales a alumnos y docentes de Secundaria, Bachillerato y Formación Profesional.
 
-#figure(image("./pics/Pasted image 20260906214415.png", alt: "McLibre"),
+#figure(image("./pics/Pasted image 20260906214415.png", alt: "La página principal de MC Libre"),
   caption: [
-    Página principal de McLibre
+    Página principal de MC Libre \
+    #text(size: 0.8em)[Captura de #link("https://www.mclibre.org/")[mclibre.org], obra de Bartolomé Sintes Marco, licencia #link("https://creativecommons.org/licenses/by-sa/4.0/deed.es")[CC BY-SA 4.0]. Reproducida sin modificar.]
   ]
 )
 
@@ -465,9 +481,10 @@ La comparación tiene límites, y son éstos: esos cursos se dirigen a estudiant
 <programming-historian>
 Queda la objeción más previsible, y se responde mejor con un ejemplo que con un argumento: «el control de versiones es cosa de programadores, un departamento de Lengua nunca va a usar eso».
 
-#figure(image("pics/screenshot-2026-09-07_14-39-23.png", alt: "Programming Historian"),
+#figure(image("pics/screenshot-2026-09-07_14-39-23.png", alt: "El directorio de lecciones de The Programming Historian"),
   caption: [
-    Lecciones de Programming Historian
+    Lecciones de The Programming Historian \
+    #text(size: 0.8em)[Captura de #link("https://programminghistorian.org/")[programminghistorian.org], ProgHist Ltd., licencia #link("https://creativecommons.org/licenses/by/4.0/deed.es")[CC BY 4.0].]
   ]
 )
 
@@ -559,11 +576,16 @@ Con ese criterio, para Windows existen estas opciones:
 
   - #strong[GitHub Desktop:]~Su código es libre (licencia MIT), aunque lo desarrolla GitHub —es decir, Microsoft— y el programa que se descarga de su web añade condiciones propias y reserva la marca y el logotipo. Gratuito, sin necesidad de permisos de administrador y compatible con cualquier servidor Gitea o Forgejo por HTTPS. Al abrirlo muestra la lista de archivos modificados; al pinchar en un tema, la pantalla se divide en dos y resalta en~#strong[rojo]~las frases borradas y en~#strong[verde]~los párrafos añadidos. Abajo a la izquierda se rellena el recuadro «¿Qué has cambiado?» y se pulsa~#emph[Confirmar y sincronizar]. Sirve para sincronizar, no para todo: las propuestas de cambio entre compañeros se hacen desde la interfaz web de Gitea, que es también donde se revisan y se aprueban.
 
-  #figure(image("pics/desktop-hero-bottom.webp", alt: "Github Desktop"),
-  caption: [
-    Github Desktop
-  ]
-)
+  // FIGURA PENDIENTE: captura propia de GitHub Desktop.
+  // Se retiró la imagen promocional de github.com por no ser reutilizable: es material
+  // de marketing con todos los derechos reservados, y este documento exige (véase «Qué
+  // puede publicarse en abierto y qué no») autor, procedencia y licencia para toda obra
+  // ajena. La única captura disponible en Wikimedia Commons es de 2015 y muestra una
+  // interfaz que ya no se parece a la que describe el párrafo anterior.
+  // Para restituirla: hacer una captura propia del programa y descomentar el bloque.
+  // #figure(image("pics/github-desktop-propia.png", alt: "La ventana de GitHub Desktop con cambios pendientes"),
+  //   caption: [Cambios pendientes en GitHub Desktop \ #text(size: 0.8em)[Captura propia.]]
+  // )
 
   - #strong[#link("https://tortoisegit.org")[TortoiseGit]:]~Se integra directamente en el Explorador de Archivos de Windows. Las carpetas de las asignaturas muestran iconos sobre el icono del archivo: un tic verde si el tema está al día y un círculo rojo si se ha modificado. Basta con hacer clic derecho sobre la carpeta, pulsar~#emph[Comparar cambios]~para revisar las diferencias línea a línea, redactar el mensaje de confirmación y enviar. Un detalle que hay que consultar antes con el coordinador TIC: al integrarse en el Explorador, TortoiseGit exige permisos de administrador para instalarse, cosa que no siempre está al alcance del docente en un equipo gestionado por la consejería.
 
@@ -572,9 +594,10 @@ Con ese criterio, para Windows existen estas opciones:
   - #strong[Zotero + Zotero Connector:] Gratuito, de código abierto y disponible en Windows. Se integra en el navegador web habitual (Chrome, Firefox, Edge). Cuando el profesor consulta un artículo, una página de divulgación o una ley, pulsa el botón del conector y Zotero extrae título, autores, fecha y enlace al instante. Con el complemento gratuito #emph[Better BibTeX], Zotero exporta y actualiza de forma transparente el archivo `referencias.bib` de la asignatura cada vez que se añade una fuente.
   - #strong[#link("https://www.jabref.org")[JabRef]:]~Software con instalador nativo para Windows. Permite introducir el ISBN de un libro para rellenar automáticamente todos sus datos y mantener el archivo~`referencias.bib`~al día sin editar código bibliográfico a mano. 
   
-  #figure(image("./pics/Pasted image 20260906214906.png", alt: "JabRef"),
+  #figure(image("./pics/Pasted image 20260906214906.png", alt: "Una bibliografía abierta en JabRef"),
   caption: [
-    Una bibliografía en Jabref
+    Una bibliografía en JabRef \
+    #text(size: 0.8em)[Captura del proyecto #link("https://www.jabref.org")[JabRef], licencia #link("https://github.com/JabRef/jabref/blob/main/LICENSE")[MIT].]
   ]
 )
 
