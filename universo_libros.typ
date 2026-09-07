@@ -214,6 +214,16 @@ Y nos extenderemos en ambos conceptos en los siguientes apartados. El objetivo d
 
 Quien lo lea con calma no necesita adoptar el paquete completo; puede empezar probando #strong[Zotero] para ordenar sus fuentes en el navegador, animarse a redactar un tema suelto en #strong[Markdown] para no pelear con Word, o comprobar que un tema escrito en texto plano sale del servidor del centro convertido en cuadernillo, sin instalar nada. 
 
+= Cómo leer este documento
+<como-leer>
+No todo lo que sigue se dirige al mismo lector, y nadie necesita leerlo entero para empezar.
+
+- #strong[Si es usted docente y quiere saber si esto es viable en su asignatura], le bastan tres capítulos: «La soberanía del texto plano», «Control de versiones en las aulas» y, sobre todo, las «Preguntas frecuentes», donde se explica qué programas hacen falta, cuánto se tarda en aprenderlos y qué ocurre el día que no hay conexión. Puede saltar directamente allí y volver después.
+- #strong[Si dirige un departamento o forma parte del equipo directivo], añada «El límite del objeto físico», que compara lo que cuesta cada modelo y a quién, y «Precedentes», que reúne lo que otros han intentado antes, incluido lo que les salió mal.
+- #strong[Si su ámbito es la administración educativa], el anexo final plantea qué cambiaría si la escala dejase de ser el centro y pasara a ser la red.
+
+Los términos técnicos se explican la primera vez que aparecen y, además, están recogidos por orden alfabético en el #strong[glosario] del final, por si conviene volver sobre alguno.
+
 = La soberanía del texto plano
 
 El primer cambio consiste en dejar atrás las suites ofimáticas cerradas y pasar al #strong[texto plano]. Escribir no es maquetar. Cuando los profesores adoptan el texto plano, por ejemplo a través de #strong[Markdown], la atención está en el contenido.
@@ -363,7 +373,7 @@ Y hay algo que reconocer al hacer este trabajo, porque refuerza el argumento en 
 <las-cuentas-del-sistema>
 No existen las comidas gratis. Que una familia acogida al Programa Accede no pague nada en septiembre no significa que los libros salgan gratis: significa que ya los ha pagado antes, por la vía del impuesto, y que los seguirá pagando cada curso mientras el modelo siga en pie. La pregunta honesta, por tanto, no es cuánto se ahorra una familia concreta, sino #strong[qué le cuesta al sistema en su conjunto cada una de las dos alternativas].
 
-Antes hay que corregir una comparación tramposa, frecuente y presente en versiones anteriores de este documento: el precio de un lote no es un gasto anual, porque un banco de préstamo se reutiliza. Su coste por curso es el amortizado, no el de compra. En la Comunidad de Madrid, la creación de un lote completo de ESO se fijó en 270 € por alumno @orden_3616_2019, los materiales no pueden sustituirse antes de cuatro cursos @decreto_168_2018 y la reposición ordinaria por deterioro o extravío se presupuesta en torno al 10% anual @orden_2476_2025. Un cuadernillo impreso, en cambio, es fungible: se consume entero cada curso y no amortiza nada.
+Antes hay que corregir una comparación tramposa, frecuente y presente en versiones anteriores de este documento: el precio de un lote no es un gasto anual, porque un banco de préstamo se reutiliza. Su coste por curso es el amortizado: el precio de compra repartido entre todos los años que ese lote se reutiliza. En la Comunidad de Madrid, la creación de un lote completo de ESO se fijó en 270 € por alumno @orden_3616_2019, los materiales no pueden sustituirse antes de cuatro cursos @decreto_168_2018 y la reposición ordinaria por deterioro o extravío se presupuesta en torno al 10% anual @orden_2476_2025. Un cuadernillo impreso, en cambio, es fungible: se consume entero cada curso y no amortiza nada.
 
 Puestas ambas cosas en la misma unidad —coste público anual por alumno de ESO— y tomando como referencia las tarifas públicas de reprografía @unizar_precios_2024 @uniovi_tarifas_reprografia, el resultado es este:
 
