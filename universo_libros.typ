@@ -341,6 +341,12 @@ La ventaja del texto plano es que actúa como una~#strong[fuente única de la ve
 
 La diferencia frente al manual de trescientas páginas del banco de libros es sustancial: el cuadernillo impreso a demanda es un material vivo y fungible. El alumno lo puede subrayar, anotar en los márgenes, completar sus ejercicios y conservarlo como su propio cuaderno de aprendizaje.
 
+#figure(image("pics/screenshot-2026-09-07_14-44-42.png", alt: "Apuntes Marea Verde"),
+  caption: [
+    Un caso de web en el ámbito nacional: Apuntes Marea Verde
+  ]
+)
+
 #strong[Qué se imprime no lo decide este documento, sino cada departamento]: la herramienta no obliga a nada. Un departamento puede limitarse a un cuadernillo de trabajo —ejercicios, esquemas, mapas mudos, actividades— y dejar la explicación en la web o en la voz del profesor. Otro puede aspirar a un temario completo, con la exposición redactada íntegramente, como llevan años haciendo los libros de Marea Verde @mareaverde. Y lo más probable es que dentro de un mismo claustro convivan ambas cosas, y que una materia empiece por lo primero y acabe en lo segundo con los años.
 
 Hay una tercera salida, menos evidente y probablemente la más valiosa: del mismo fichero pueden generarse #strong[versiones adaptadas] casi gratis. El mismo tema con cuerpo de letra mayor, más interlineado, una tipografía pensada para lectores con dislexia, alto contraste o sin las imágenes decorativas que distraen. Donde una editorial ofrece una edición adaptada —cuando la ofrece— y la cobra aparte, aquí basta con volver a generar el mismo texto con otra plantilla.
